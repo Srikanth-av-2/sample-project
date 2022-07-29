@@ -8,20 +8,20 @@ pipeline {
             }
         }
         
-        stage('testing') {
+        stage('testing feature') {
             steps {
                 echo "testing"
             }
         }
         
-        stage('build') {
+        stage('build feature') {
             steps {
                 echo "building"
             }
         }
         stage('deploy') {
             steps {
-                echo "application deployed to server"
+                echo "application deployed to feature server"
             }
         }
     }
